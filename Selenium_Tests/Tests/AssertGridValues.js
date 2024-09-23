@@ -19,5 +19,3 @@ describe('Table', () => {
     expect(await table.getCellValue(0, 1)).to.equal('Tinmouth');
   });
 });
-
-

@@ -18,6 +18,8 @@ The Page Object Model (POM) design pattern is used to enhance code readability a
 3. Install ChromeDriver: `npm install chromedriver`
 4. Install Mocha: `npm install mocha`
 5. Execute Selenium tests, e.g., `npm test ./Tests/LoginFunction.js`
+6. Before running the tests, ensure that you modify the file path in the `BasePage` class. The path should point to your local version of **[QE-index.html](./QE-index.html)** for example:
+   `driver.get('file:///C:/Your/Local/Path/QE-index.html');`
 
 ## Test Locations
 
@@ -26,7 +28,7 @@ The Page Object Model (POM) design pattern is used to enhance code readability a
 
 ## Project Structure
 
-- **[Tests](./Tests)**: Contains the test scripts that validate the functionality of the application.
+- **[Tests](.Selenium_Tests/Tests)**: Contains the test scripts that validate the functionality of the application.
 - **[pageObjects](./pageObjects)**: Contains the methods for interacting with the elements on the web pages.
 - **[QE-index.html](./QE-index.html)**: The HTML file to which the tests are written.
 - **[QE-guide.html](./QE-guide.html)**: A document outlining the tasks and requirements for the tests.

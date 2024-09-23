@@ -5,13 +5,13 @@ const expect = chai.expect;
 
 describe('The `Login` function', () => {
 
-  beforeEach(() => {
+  before(() => {
     homePage.go_to_url();
-  })
+  });
 
-  afterEach(() => {
+  after(() => {
     homePage.quit_test();
-  })
+  });
 
   it('should find `email`, `password`, and `Sign in` button', () => {
     expect(loginFunction.find_email_field()).to.be.true;
@@ -20,7 +20,7 @@ describe('The `Login` function', () => {
   });
 
   it('should input data to the fields', () => {
-    loginFunction.enter_email('test@email.ca');
-    loginFunction.enter_password('Test1234!')
+    loginFunction.type_email('test@email.ca');
+    loginFunction.type_password('Test1234!')
   });
 });

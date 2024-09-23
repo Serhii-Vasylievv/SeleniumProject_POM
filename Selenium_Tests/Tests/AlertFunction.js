@@ -26,5 +26,3 @@ describe('The "PopUp message" function', () => {
     assert.isTrue(await alert.button_not_active(), 'Second button should be disabled');
   });
 });
-
-

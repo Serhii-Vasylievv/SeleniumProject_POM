@@ -15,15 +15,15 @@ class LoginFunction {
   find_login_button() {
     const button = driver.findElement(By.css('button.btn.btn-lg.btn-primary.btn-block[type="submit"]')).isDisplayed();
     return button !== null;
-  }
+  };
 
-  enter_email(emailAddress) {
+  type_email(emailAddress) {
     driver.findElement(By.css('#inputEmail')).sendKeys(emailAddress, Key.RETURN);
   };
 
-  enter_password(password) {
+  type_password(password) {
     driver.findElement(By.css('#inputPassword')).sendKeys(password, Key.RETURN);
   };
-}
+};
 
 module.exports = new LoginFunction;

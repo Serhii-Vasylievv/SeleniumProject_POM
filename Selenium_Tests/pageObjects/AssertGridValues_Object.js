@@ -6,7 +6,7 @@ class Table {
     const table = await driver.findElement(By.css('.table'));
     const cell = await table.findElement(By.xpath(`tbody/tr[position()=${rowIndex + 1}]/td[position()=${colIndex + 1}]`));
     return await cell.getText();
-  }
-}
+  };
+};
 
 module.exports = new Table;
