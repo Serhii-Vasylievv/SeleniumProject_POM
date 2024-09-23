@@ -28,7 +28,7 @@ The Page Object Model (POM) design pattern is used to enhance code readability a
 
 ## Project Structure
 
-- **[Tests](.Selenium_Tests/Tests)**: Contains the test scripts that validate the functionality of the application.
+- **[Tests](./Tests)**: Contains the test scripts that validate the functionality of the application.
 - **[pageObjects](./pageObjects)**: Contains the methods for interacting with the elements on the web pages.
 - **[QE-index.html](./QE-index.html)**: The HTML file to which the tests are written.
 - **[QE-guide.html](./QE-guide.html)**: A document outlining the tasks and requirements for the tests.
