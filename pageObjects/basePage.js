@@ -8,7 +8,7 @@ class BasePage {
   };
 
   go_to_url(theURL) {
-    driver.get('file:///C:/Users/vv449/study/Selenium_Tests/QE-index.html');
+    driver.get('file:///C:/Users/vv449/study/TestTask/SeleniumProject_POM/QE-index.html');
   };
 
   quit_test() {
